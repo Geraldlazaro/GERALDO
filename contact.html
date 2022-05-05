@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+    <style>
+        div{
+            padding: 10px;
+        }
+        form{
+            width: 60%;
+            margin: 20px;
+            border: 5px solid navy;
+            background-image: url("images/contacts.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    .contactinput{
+
+        width: 100%;
+        padding: 12px 12px;
+        margin: 8px 0px;
+        display: inline-block;
+        box-sizing: border-box;
+        border: 3px navy;
+        border-radius: 4px;
+
+    }
+.center{
+    text-align: center;
+    text-decoration-color: blue;
+}
+
+
+
+    </style>
+
+</head>
+<body>
+<h3 class="center">Fill In The Form Below</h3>
+<form action="#">
+  <div>
+      <label>Full Name* </label> <br>
+      <input class="contactinput" name="fullname" required>
+
+  </div>
+<div>
+    <label>Email Address*</label> <br>
+    <input class="contactinput" name="email" required>
+</div>
+
+<div>
+    <label>Phone Number</label> <br>
+    <input class="contactinput" name="pnumber" placeholder="+254">
+
+</div>
+
+    <div>
+        <label>County</label> <br>
+        <select class="contactinput" id="county">
+            <option value="Nairobi">Nairobi</option>
+            <option value="Kisumu">Kisumu</option>
+            <option value="Mombasa">Mombasa</option>
+            <option value="Kitui">Kitui</option>
+        </select>
+
+
+
+    </div>
+
+    <div>
+
+        <label> booking</label> <br>
+        <input class="contactinput"type="date" name="date">
+
+    </div>
+    <div>
+        <label>More Information</label> <br>
+        <textarea name="aoi" id="aoi" cols="30" rows="10"></textarea>
+
+
+    </div>
+
+
+
+<div>
+    <input class="contactinput" type="submit" name="submit" value="SUBMIT">
+
+</div>
+
+
+
+</form>
+
+</body>
+</html>

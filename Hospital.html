@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Patient Admission</title>
+</head>
+<style>
+    form{
+        width: 90%;
+        margin: 2px;
+        border: 5px solid navy;
+        background-image: url("images/hospitalbed.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+label{
+    font-size: 20px
+;
+}
+
+
+
+
+        div{
+          padding: 10px 10px;
+
+        }
+         .contactinput{
+             width: 80%;
+         }
+
+
+.inputstyle{
+    border: 3px blue;
+    alignment: left;
+
+}
+
+h1{
+    text-align: right;
+    border: 3px black;
+    border-radius: 4px;
+
+}
+h2{
+    text-align: center;
+    color: blue;
+
+}
+
+h3{
+    text-align: left;
+    color: aqua;
+    border: 3px darkblue;
+
+}
+
+label{
+    color: black;
+
+
+}
+
+</style>
+
+
+
+
+
+
+
+
+<body>
+
+<form action="#">
+    <center>
+
+<h1>Patient Admission Form</h1>
+
+    </center>
+
+
+    <center>
+
+
+
+    </center>
+
+
+<h3>Personal and Administration Details</h3>
+
+
+<div>
+    <label>Surname(family name)</label>
+    <input type="text"name="Surname" > <br>
+
+    </div>
+
+   <div>
+       <label>First Name*</label>
+    <input type="text"name="first name"> <br>
+
+   </div>
+
+    <div>
+
+        <label>Date Of Birth</label>
+         <input type="date"name="Date of Birth"> <br>
+
+    </div>
+
+    <div>
+
+        <label>Postal Address*</label>
+        <input type="text"name="Postal Address" required><br>
+
+    </div>
+
+
+    <div>
+
+        <label>Telephone (Home)</label>
+        <input type="text"name="pnumber" placeholder="+254" required>
+
+
+
+    </div>
+
+    <div>
+        <label>Religion</label>
+        <input type="text"name="Religion">
+
+    </div>
+
+
+
+
+    <h3>Next To Kin</h3>
+
+
+    <div>
+
+        <label>Name</label>
+    <input type="text" name="name">
+
+
+
+
+        <label>Address</label>
+    <input type="text"name="address">
+
+    </div>
+
+   <div>
+       <label>Telephone</label>
+    <input type="number"name="pnumber">
+
+        <label>Relationship to Patient</label>
+    <input type="text"name="relationships">
+    </div>
+
+
+    <h3> Payment Details</h3>
+    <p>How will your procedures be paid for? Tick and complete as many as applies</p>
+
+
+    <span>
+    <label>Health Insuarance</label>
+      <input type="checkbox"name="payment"value="Health Insuarance">
+        <label>Name Of Insurer</label>
+        <input type="text"name="insurer">
+        <label>Membership Number</label>
+        <input type="number"name="number"> <br>
+
+
+
+        <label>ACC</label>
+        <input type="checkbox"name="payment"value="ACC">
+
+        <label>DHB</label>
+        <input type="checkbox"name="payment"value="DHB">
+
+        <label>Paid Personally</label>
+        <input type="checkbox"name="payment"value="personally">
+
+    </span>
+
+<p>
+    I will pay acc by
+
+
+    <span>
+
+         <label>Cash</label>
+      <input type="radio"name="pay"value="Cash">
+
+         <label>Credit Card</label>
+      <input type="radio"name="pay"value="Credit Card">
+
+         <label>Debit Card</label>
+      <input type="radio"name="pay"value="Debit Card">
+
+         <label>Internet Banking</label>
+      <input type="radio"name="pay"value="Internet Banking">
+
+         <label>Cheque</label>
+      <input type="radio"name="pay"value="Cheque">
+
+
+    </span>
+</p>
+
+    <h3>Agreement</h3>
+
+    <p>
+        On choice of hospital patient must agree to settle Hospital account in full at time of discharge based on tireless
+        services offered by the institution.Also permission of the Red Cross to Obtain information of health details and
+        disclosure of health status by hospital.
+        In case of sudden death the hospital is not accounted in coalition of death of patient as services are offered.
+        BRING YOUR ILL SELF AT YOUR OWN RISK
+
+    </p>
+
+    <label>Name of Patient</label>
+    <input type="text"name="name">
+
+    <div>
+        <label>Date</label>
+        <input type="date"name="date">
+
+    </div>
+
+
+
+    <label>Signature of Patient</label>
+    <textarea name="aoi" id="aoi" cols="30" rows="10"></textarea>
+
+
+
+
+
+
+
+    <div>
+        <input type="submit" name="submit" value="SUBMIT">
+
+    </div>
+
+
+
+    <h2>Please submit the form to Hospital for the next procedure</h2>
+
+
+
+
+
+</form>
+</body>
+</html>
